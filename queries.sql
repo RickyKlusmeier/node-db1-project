@@ -1,11 +1,11 @@
 -- Database Queries
 
 -- Find all customers with postal code 1010
-select * from customers where postalcode = 1010;
+SELECT * FROM Customers WHERE PostalCode = 1010;
 -- Find the phone number for the supplier with the id 11
-select phone from suppliers where supplierid = 11;
+SELECT Phone FROM Suppliers WHERE SupplierID = 11;
 -- List first 10 orders placed, sorted descending by the order date
-select * from orders order by orderdate limit 10;
+SELECT * from Orders ORDER BY ORDERDATE DESC LIMIT 10;
 -- Find all customers that live in London, Madrid, or Brazil
 SELECT * from Customers
 WHERE City in ('London', 'Madrid')
